@@ -29,7 +29,7 @@ end
 #  be assigned to room 5!", "Hello, Linus! You'll be assigned to room 6!", "
 #  Hello, Matz! You'll be assigned to room 7!"]
 
-def printer
+def printer(speakers)
   speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
   batch_badge_creator(speakers).each do |badge|
     puts badge
