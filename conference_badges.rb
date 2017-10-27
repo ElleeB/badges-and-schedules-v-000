@@ -4,8 +4,6 @@ def badge_maker(name)
 end
 
 #speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-#rooms = [1, 2, 3, 4, 5, 6, 7]
-
 
 def batch_badge_creator(speakers)
   speakers.collect do |name|
@@ -14,7 +12,6 @@ def batch_badge_creator(speakers)
 end
 
 #speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-#rooms = [1, 2, 3, 4, 5, 6, 7]
 
 def assign_rooms(speakers)
   speaker_with_room = []
