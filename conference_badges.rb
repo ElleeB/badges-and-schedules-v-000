@@ -16,10 +16,16 @@ end
 #speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 #rooms = [1, 2, 3, 4, 5, 6, 7]
 
-def assign_rooms(speakers, rooms)
-  name_with_index = []
-  speakers.each_with_index do |name, index|
-    name_with_index << "#{name} #{index}"
+def assign_rooms(speakers)
+  speakers.each_with_index do |name, index| #I've stored the name and index
+    room_number = index + 1
+    puts "Hello, #{name}! You'll be assigned to room #{room_number}"
   end
-  name_with_index
 end
+
+
+name_with_index = []
+speakers.each_with_index do |name, index|
+  name_with_index << "#{name} #{index}"
+end
+name_with_index
