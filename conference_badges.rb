@@ -30,6 +30,7 @@ end
 #  Hello, Matz! You'll be assigned to room 7!"]
 
 def printer
+  speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
   batch_badge_creator(speakers).each do |badge|
     puts badge
   end
@@ -37,3 +38,5 @@ def printer
     puts assignments
   end
 end
+
+#needed to repeat the speakers to make it local for the #printer method
