@@ -19,7 +19,7 @@ end
 def assign_rooms(speakers)
   speakers.each_with_index do |name, index| #I've stored the name and index
     room_number = index + 1
-    puts "Hello, #{name}! You'll be assigned to room #{room_number}"
+    puts "Hello, #{name}! You'll be assigned to room #{room_number}!"
   end
 end
 
