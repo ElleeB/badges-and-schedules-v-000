@@ -14,7 +14,6 @@ end
 #    name is Charles.", "Hello, my name is Alan.", "Hello, my name is Grace.",
 #   "Hello, my name is Linus.", "Hello, my name is Matz."]
 
-
 def assign_rooms(speakers)
   speaker_with_room = []
   speakers.each_with_index do |name, index|
@@ -30,10 +29,11 @@ end
 #  be assigned to room 5!", "Hello, Linus! You'll be assigned to room 6!", "
 #  Hello, Matz! You'll be assigned to room 7!"]
 
-
 def printer
-
+  batch_badge_creator(speakers).each do |badge|
+    puts badge
+  end
+  assign_rooms(speakers).each do |assignments|
+    puts assignments
+  end
 end
-
-
-badges_and_room_assignments.each_line do |line|
